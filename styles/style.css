@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #F7F8F9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parent {
+    position: relative;
+}
+
+.mainDiv{
+    position: absolute;
+    height: 93.26%;
+    width: 83.34%;
+    top: 5%;
+    left: 8.34%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.first{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 22%;
+    height: 3.91%;
+    position: relative;
+}
+
+input{
+    width: 155px;
+    height: 10px;
+    padding: 13.5px 35px;
+    border: 1px solid #E7EAEE;
+    border-radius: 60px;
+    left: 20px;
+    top: -8px;
+    position: absolute;
+}
+
+input:focus{
+    outline: none;
+}
+
+.searchDiv{
+    position: relative;
+}
+
+.searchIcon{
+    position: absolute;
+    left: 34px;
+    top: 5px;
+    height: 13.5px;
+    width: 13.5px;
+}
+
+ul{
+    margin-left: 55px;
+    display: flex;
+    list-style: none;
+    gap: 25%;
+}
+
+#nike{
+    width: 44.42px;
+    height: 18.15px;
+}
+
+.icons{
+    width: 19.5px;
+    height: 19px;
+}
+
+#bag{
+    margin-left: 12px;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+}
+
+.headDiv{
+    display: flex;
+    gap: 74%;
+    margin-bottom: -44%;
+}
+
+.pText{
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 0.2px;
+}
+
+.bracketText{
+    margin-left: 6px;
+    color: #64748B;
+}
+
+.filterPara{
+    display: flex;
+    position: relative;
+    left: 5%;
+}
+
+.filterImg{
+    position: absolute;
+    top: 3.5px;
+    right: 106%;
+    height: 14.4px;
+    width: 16px;
+}
+
+.shoeImg1{
+    width: 210px;
+    height: 162px;
+    border-radius: 12px;
+}
+
+.cardGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 10px;
+    width: 103.5%;
+}
+
+.card{
+    border: 1px solid #FFFFFF;
+    width: 12.6vw;
+    height: 28.5vh;
+    padding: 10px 2.8px 40px 10px;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px 1px #f2f3f4;
+    transition: border-color 0.3s ease;
+    max-width: 100%;
+}
+
+.strokeImg{
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    background-color: rgb(171, 170, 170);
+}
+
+.card .shoeImg1{
+    max-width: 100%;
+}
+
+.card:hover{
+    border: 1px solid #6183E4;
+}
+
+.card div{
+    background-color: #FFFFFF;
+}
+
+.card .cardContent p{
+    background-color: #FFFFFF;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+    gap: 14px;
+    margin-top: -34%;
+}
+
+.bspara{
+    text-transform: uppercase;
+    color: #DC2626;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.7px;
+}
+
+.cardP{
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+}
+
+.imgDiv{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.imgDiv img{
+    height: 19px;
+    width: 19px;
+}
+
+@media(max-width : 430px){
+    .mainDiv{
+        width: 40%;
+    }
+
+    .first{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 12%;
+        height: 3.91%;
+        width: 50%;
+        position: relative;
+    }
+
+    input{
+        width: 105px;
+        height: 10px;
+        padding: 13.5px 35px;
+        border: 1px solid #E7EAEE;
+        border-radius: 60px;
+        left: 0px;
+        top: 10px;
+        position: absolute;
+    }
+
+    .searchIcon{
+        top: 22px;
+        left: 15px;
+    }
+
+    .iconDiv{
+        position: absolute;
+        left: 344%;
+        margin-top: 2.5em;
+    }
+
+    .headDiv{
+        margin-top: 20px;
+    }
+
+    .pText{
+        font-size: 14px;
+    }
+
+    .filterPara p{
+        margin-left: 50px;
+        font-size: 14px;
+    }
+
+    .filterImg{
+        left: 22%;
+    }
+
+    ul{
+        margin-left: 0px;
+        gap: 5%;
+    }
+
+    .card{
+        width: 120vw;
+        height: 80vh;
+        padding: 10px 10px 80px 10px;
+    }
+    
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+        height: 14px;
+        gap: 3px;
+        margin-top: -2.5%;
+    }
+
+    .card .cardContent .bspara{
+        font-size: 10px;
+    }
+
+    .card .cardContent p{
+        font-size: 12px;
+    }
+
+    .imgDiv{
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
+
+    .imgDiv img{
+        height: 12px;
+        width: 12px;
+    }
+    
+    .cardGrid{
+        display: flex;
+        flex-direction: column;
+        row-gap: 6%;
+        margin-top: 100px;
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 431px) and (max-width:599px){
+
+    #als{
+        font-size: 16px;
+    }
+
+    .filterPara{
+        font-size: smaller;
+    }
+
+    .first{
+        width: 111%;
+    }
+
+    ul{
+        margin-left: -90px;  
+        gap: 15%;
+        font-size: 16px;
+    }
+
+    .first{
+        gap: 10px;
+    }
+
+    input{
+        display: none;
+    }
+
+    .searchIcon{
+        display: none;
+    }
+
+    .headDiv{
+        margin-bottom: 20px;
+    }
+
+
+    .cardGrid{
+        grid-template-columns: auto auto;
+        justify-content: center;
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+    .card{
+        width: 30vw;
+        padding: 10px 10px 60px 10px;
+    }
+
+    .cardContent{
+        margin-top: -30%;
+        height: 10px;
+        gap: 12px;
+    }
+
+    .card .cardContent .bspara{
+        font-size: 12px;
+    }
+
+    .card .cardContent p{
+        font-size: 14px;
+    }
+
+    .imgDiv img{
+        height: 16px;
+        width: 16px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width:750px){
+
+    #als{
+        font-size: 16px;
+    }
+
+    .filterPara{
+        font-size: smaller;
+    }
+
+    .first{
+        width: 111%;
+    }
+
+    ul{
+        margin-left: -90px;  
+        gap: 10%;
+        font-size: 14px;
+    }
+
+    .first{
+        gap: 100px;
+    }
+
+    input{
+        left: -60px;
+        width: 80px;
+    }
+
+    .searchIcon{
+        left: -46px;
+    }
+
+    .headDiv{
+        margin-bottom: 20px;
+    }
+
+
+    .cardGrid{
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+    .card{
+        width: 22vw;
+        padding: 10px 10px 60px 10px;
+    }
+
+    .cardContent{
+        margin-top: -38%;
+        height: 10px;
+        gap: 12px;
+    }
+
+    .card .cardContent .bspara{
+        font-size: 12px;
+    }
+
+    .card .cardContent p{
+        font-size: 14px;
+    }
+
+    .imgDiv img{
+        height: 16px;
+        width: 16px;
+    }
+
+}
+
+@media (min-width: 750px) and (max-width:900px){
+
+    .first{
+        width: 111%;
+    }
+
+    ul{
+        margin-left: -90px;  
+        gap: 14%;
+    }
+
+    .first{
+        gap: 100px;
+    }
+
+    input{
+        left: -60px;
+        width: 105px;
+    }
+
+    .searchIcon{
+        left: -46px;
+    }
+
+    .headDiv{
+        margin-bottom: 20px;
+    }
+
+
+    .cardGrid{
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        row-gap: 40px;
+        column-gap: 80px;
+    }
+
+    .card{
+        width: 20vw;
+        padding: 10px 10px 60px 10px;
+    }
+
+    .cardContent{
+        margin-top: -25%;
+        height: 10px;
+        gap: 12px;
+    }
+
+    .card .cardContent .bspara{
+        font-size: 12px;
+    }
+
+    .card .cardContent p{
+        font-size: 14px;
+    }
+
+    .imgDiv img{
+        height: 16px;
+        width: 16px;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width:1200px){
+
+    ul{
+        margin-left: -60px;  
+    }
+
+    input{
+        left: -40px;
+        width: 125px;
+    }
+
+    .searchIcon{
+        left: -26px;
+    }
+
+    .headDiv{
+        margin-bottom: 20px;
+    }
+
+
+    .cardGrid{
+        grid-template-columns: auto auto auto;
+        row-gap: 20px;
+    }
+
+    .card{
+        width: 17vw;
+        padding: 10px 10px 60px 10px;
+    }
+
+    .cardContent{
+        margin-top: -25%;
+        height: 10px;
+        gap: 12px;
+    }
+
+    .card .cardContent .bspara{
+        font-size: 12px;
+    }
+
+    .card .cardContent p{
+        font-size: 14px;
+    }
+
+    .imgDiv img{
+        height: 16px;
+        width: 16px;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width:1400px){
+
+    ul{
+        margin-left: 0px;  
+    }
+
+    input{
+        left: -20px;
+    }
+
+    .searchIcon{
+        left: -7px;
+    }
+
+    .headDiv{
+        margin-bottom: 20px;
+    }
+
+    .cardGrid{
+        grid-template-columns: auto auto auto auto;
+        row-gap: 20px;
+    }
+
+    .card{
+        width: 15vw;
+        padding: 10px 10px 50px 10px;
+    }
+
+    .cardContent{
+        margin-top: -24%;
+        height: 10px;
+        gap: 12px;
+    }
+
+    .imgDiv img{
+        height: 16px;
+        width: 16px;
+    }
+
+    .imgDiv{
+        margin-bottom: 4px;
+    }
+}
+
